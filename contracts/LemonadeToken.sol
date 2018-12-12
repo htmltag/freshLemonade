@@ -29,5 +29,10 @@ contract LemonadeToken is ERC721, Ownable {
         lemonadename = _lem.name;
         ingredients = _lem.ingredients;
     }
+
+    //Gives us the number of lemonades minted.
+    function numberOfLemonades() external view returns (uint256) {
+        return lemonades.length;
+    }
 }
 

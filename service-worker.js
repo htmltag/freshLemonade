@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/htmltag/freshLemonade/precache-manifest.f2443919dc3b5c51bba6a4e282ef639f.js"
+  "/freshLemonade/precache-manifest.aa343e38d829e36ce2f593692cb2f88b.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/htmltag/freshLemonade/index.html", {
+workbox.routing.registerNavigationRoute("/freshLemonade/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

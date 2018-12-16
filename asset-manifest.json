@@ -1,14 +1,14 @@
 {
-  "main.css": "/htmltag/freshLemonade/static/css/main.d4ebbfd9.chunk.css",
-  "main.js": "/htmltag/freshLemonade/static/js/main.7b11d27f.chunk.js",
-  "main.js.map": "/htmltag/freshLemonade/static/js/main.7b11d27f.chunk.js.map",
-  "static/js/1.5e3527c2.chunk.js": "/htmltag/freshLemonade/static/js/1.5e3527c2.chunk.js",
-  "static/js/1.5e3527c2.chunk.js.map": "/htmltag/freshLemonade/static/js/1.5e3527c2.chunk.js.map",
-  "runtime~main.js": "/htmltag/freshLemonade/static/js/runtime~main.10c084c5.js",
-  "runtime~main.js.map": "/htmltag/freshLemonade/static/js/runtime~main.10c084c5.js.map",
-  "static/media/logo.svg": "/htmltag/freshLemonade/static/media/logo.5d5d9eef.svg",
-  "static/css/main.d4ebbfd9.chunk.css.map": "/htmltag/freshLemonade/static/css/main.d4ebbfd9.chunk.css.map",
-  "index.html": "/htmltag/freshLemonade/index.html",
-  "precache-manifest.f2443919dc3b5c51bba6a4e282ef639f.js": "/htmltag/freshLemonade/precache-manifest.f2443919dc3b5c51bba6a4e282ef639f.js",
-  "service-worker.js": "/htmltag/freshLemonade/service-worker.js"
+  "main.css": "/freshLemonade/static/css/main.d4ebbfd9.chunk.css",
+  "main.js": "/freshLemonade/static/js/main.5cdc760a.chunk.js",
+  "main.js.map": "/freshLemonade/static/js/main.5cdc760a.chunk.js.map",
+  "static/js/1.bd5293b1.chunk.js": "/freshLemonade/static/js/1.bd5293b1.chunk.js",
+  "static/js/1.bd5293b1.chunk.js.map": "/freshLemonade/static/js/1.bd5293b1.chunk.js.map",
+  "runtime~main.js": "/freshLemonade/static/js/runtime~main.2245983d.js",
+  "runtime~main.js.map": "/freshLemonade/static/js/runtime~main.2245983d.js.map",
+  "static/media/logo.svg": "/freshLemonade/static/media/logo.5d5d9eef.svg",
+  "static/css/main.d4ebbfd9.chunk.css.map": "/freshLemonade/static/css/main.d4ebbfd9.chunk.css.map",
+  "index.html": "/freshLemonade/index.html",
+  "precache-manifest.aa343e38d829e36ce2f593692cb2f88b.js": "/freshLemonade/precache-manifest.aa343e38d829e36ce2f593692cb2f88b.js",
+  "service-worker.js": "/freshLemonade/service-worker.js"
 }

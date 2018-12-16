@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/freshLemonade/precache-manifest.293592fa1b79f2f02ef0851fec901c45.js"
+  "/freshLemonade/precache-manifest.9acab329eb63fe75efa18b900b9d0ffe.js"
 );
 
 workbox.clientsClaim();

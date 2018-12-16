@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import GetAllLemonades from "./GetAllLemonades";
+import AddLemonade from './AddLemonade';
+import PutLemonadeForSale from './PutLemonadeForSale';
 
 class App extends Component {
   state = { loading: true, drizzleState: null };
@@ -30,10 +32,22 @@ class App extends Component {
     if (this.state.loading) return "Loading Drizzle...";
     return (
       <div className="App">
-        <GetAllLemonades
+      <div className="App-header"><h1><span className="App-freshheader">Fresh</span> <span className="App-lemonheader">Lemonade</span></h1></div>
+      <div className="App-container">
+      <AddLemonade 
+      drizzle={this.props.drizzle}
+      drizzleState={this.state.drizzleState}
+      />
+      <PutLemonadeForSale 
+      drizzle={this.props.drizzle}
+      drizzleState={this.state.drizzleState}
+      />
+        {<GetAllLemonades
           drizzle={this.props.drizzle}
           drizzleState={this.state.drizzleState}
-        />
+        />}
+      </div>
+      
       </div>
     );
   }

@@ -8,14 +8,18 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #401B60;
+  border-bottom: 1px solid #9B36CE;
+  min-height: 70px;
+  color: #F9C409;
+}
+
+.App-lemonheader {
+  font-family: 'Unlock', cursive;
+}
+
+.App-freshheader {
+  font-family: 'Charm';
 }
 
 .App-link {
@@ -29,4 +33,84 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/*Lemonade oner only*/
+.owneronly{
+  margin-top: 1.5rem;
+  padding-top: 0.3rem;
+  background-color: #401B60;
+  border-bottom: 1px solid #9B36CE;
+  color: #F9C409;
+  font-size: 1.3rem;
+}
+
+/*Lemonades*/
+.App-container{
+  width: 98%;
+  margin: 0 auto;
+}
+
+/*Lemonade details*/
+.lemonade-details-h3{
+  margin-top: 1.5rem;
+  padding-top: 0.3rem;
+  background-color: #401B60;
+  border-bottom: 1px solid #9B36CE;
+  color: #F9C409;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.lemonade-details-h3 span::before{
+  content: "\A";
+  white-space: pre;
+}
+
+.ingh3 {
+
+  font-size: 0.8rem;
+}
+
+.lemonade-details{
+  background-color: #7B42AC;
+  color: #ffffff;
+  text-align: justify;
+  padding-bottom: 0.7rem;
+  border-radius: 0.4rem;
+  border-bottom: 3px solid #9B36CE;
+}
+
+.lemonade-details p {
+  padding-left: 1rem;
+}
+
+/*not for sale*/
+.nfs {
+  color: red;
+}
+
+/*ingredients*/
+.water-percentage {
+  background-color: #56d1f3;
+  color: black;
+  padding: 0.2rem;
+  text-shadow: 0 1px 0 black;
+  border-radius: 2rem;
+}
+
+.sugar-percentage {
+  background-color: #b3e7f5;
+  color: black;
+  padding: 0.2rem;
+  text-shadow: 0 1px 0 black;
+  border-radius: 2rem;
+}
+
+.lemon-percentage {
+  background-color: yellow;
+  color: black;
+  padding: 0.2rem;
+  text-shadow: 0 1px 0 black;
+  border-radius: 2rem;
 }

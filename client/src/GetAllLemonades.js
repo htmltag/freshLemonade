@@ -19,7 +19,7 @@ class GetAllLemonades extends React.Component {
     let list = [];
 
     for (let i = 0; i < lemonadeSize; i++){
-      list.push(<div><GetLemonade lemonadeid={i} drizzle={this.props.drizzle} drizzleState={this.props.drizzleState} /></div>);
+      list.push(<div className="col-xs-12 col-sm-6 col-md-3"><GetLemonade lemonadeid={i} drizzle={this.props.drizzle} drizzleState={this.props.drizzleState} /></div>);
     }
     return list;
   };
@@ -39,7 +39,9 @@ class GetAllLemonades extends React.Component {
     
     // if it exists, then we display its value
     return (
-      this.createLemonadeList(size)
+      <div className="row">
+      {this.createLemonadeList(size)}
+      </div>
     );
   }
 }

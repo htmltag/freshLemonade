@@ -33,7 +33,7 @@ class BidOnLemonade extends React.Component {
   render() {
     return (
         <span>
-        <button type="button" class="btn btn-primary btn-sm" onClick={this.makeBid}>Buy</button>
+        <button type="button" className="btn btn-primary btn-sm" onClick={this.makeBid}>Buy</button>
         <span>{this.getTxStatus()}</span>
         </span>
       );

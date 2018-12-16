@@ -20,7 +20,8 @@ class PutLemonadeForSale extends React.Component {
   };
 
   handleSubmit = event => {
-    event.preventDefault();     
+    event.preventDefault();
+    console.log("put it for sale");     
     const { drizzle, drizzleState } = this.props;
     const contract = drizzle.contracts.LemonadeAuction;
 

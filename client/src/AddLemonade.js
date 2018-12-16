@@ -1,14 +1,14 @@
 import React from "react";
 
 class AddLemonade extends React.Component {
-  state = { stackId: null, nameLem: null, ing: null, show: false };
+  state = { dataKey: null, nameLem: "", ing: null, show: false };
   
   setShow = () => {
     const willShow = this.state.show ? false : true; 
     this.setState({show: willShow});
   };
 
-  handleInputChange = event => {
+  handleInputChangeAdd = event => {
     const target = event.target;
     const value = target.value;
     const name = target.name;
@@ -19,19 +19,19 @@ class AddLemonade extends React.Component {
     
   };
 
-  handleSubmit = event => {
+  handleSubmitAdd = event => {
     event.preventDefault();     
-    alert('Lemonade name is: ' + this.state.nameLem);
+    console.log("Lemonade name is: " + this.state.nameLem);
     const { drizzle, drizzleState } = this.props;
     const contract = drizzle.contracts.LemonadeAuction;
 
     // let drizzle know we want to watch the `myString` method
-    const stackId = contract.methods["mint"].cacheSend(this.state.nameLem, this.state.ing, {
+    const dataKey = contract.methods["mint"].cacheSend(this.state.nameLem, this.state.ing, {
         from: drizzleState.accounts[0]
       });
 
     // save the `stackId` to local component state for later reference
-    this.setState({ stackId });
+    this.setState({ dataKey });
   };
 
   getTxStatus = () => {
@@ -55,7 +55,7 @@ class AddLemonade extends React.Component {
         )
       }else{
         return (
-            <form className="owneronly" onSubmit={this.handleSubmit}>
+            <form className="owneronly" onSubmit={this.handleSubmitAdd}>
             <button type="button" className="btn btn-outline-info bt-sm" onClick={this.setShow}>Hide Add Lemonade</button>
             <p>Only for owner</p>
             <label>
@@ -64,19 +64,19 @@ class AddLemonade extends React.Component {
                 name="nameLem"
                 type="text"
                 value={this.state.nameLem}
-                onChange={this.handleInputChange} />
+                onChange={this.handleInputChangeAdd} />
             </label>
             <br />
             <label>
-              Ingredients   :
+              Ingredients:
               <input
                 name="ing"
                 type="number"
                 value={this.state.ing}
-                onChange={this.handleInputChange} />
+                onChange={this.handleInputChangeAdd} />
             </label>
             <br />
-            <input type="submit" type="button" className="btn btn-primary btn-sm" value="Add Lemonade" />
+            <input type="submit" className="btn btn-primary btn-sm" value="Add Lemonade" />
             <span>{this.getTxStatus()}</span>
           </form>
           );

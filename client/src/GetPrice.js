@@ -21,7 +21,7 @@ class GetPrice extends React.Component {
         view.push(<p>Price: <span className="nfs">Not for sale</span></p>)
         return view;
     }
-    let address = auction.value[0];
+    
     let price = auction.value[1];
 
     if(price <= 0 ){

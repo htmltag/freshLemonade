@@ -4,6 +4,7 @@ import './App.css';
 import GetAllLemonades from "./GetAllLemonades";
 import AddLemonade from './AddLemonade';
 import PutLemonadeForSale from './PutLemonadeForSale';
+import CancelLemonadeForSale from './CancelLemonadeForSale';
 
 class App extends Component {
   state = { loading: true, drizzleState: null };
@@ -29,16 +30,26 @@ class App extends Component {
   }
 
   render() {
-    if (this.state.loading) return "Loading Drizzle...";
+    if (this.state.loading) return "Loading Dapp...";
     return (
       <div className="App">
-      <div className="App-header"><h1><span className="App-freshheader">Fresh</span> <span className="App-lemonheader">Lemonade</span></h1></div>
+      <div className="App-header">
+        <h1>
+          <span className="App-freshheader">Fresh</span> 
+          <span className="App-lemonheader">Lemonade</span>
+          <span className="ropsten"> Ropsten testnet</span>
+        </h1>
+      </div>
       <div className="App-container">
       <AddLemonade 
       drizzle={this.props.drizzle}
       drizzleState={this.state.drizzleState}
       />
       <PutLemonadeForSale 
+      drizzle={this.props.drizzle}
+      drizzleState={this.state.drizzleState}
+      />
+      <CancelLemonadeForSale 
       drizzle={this.props.drizzle}
       drizzleState={this.state.drizzleState}
       />

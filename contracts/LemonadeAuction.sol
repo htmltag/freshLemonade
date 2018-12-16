@@ -22,7 +22,7 @@ contract LemonadeAuction is LemonadeToken {
 
     function bid( uint256 _lemonadeId ) public payable {
         Auction memory auction = lemonadeIdToAuction[_lemonadeId];
-        require(auction.seller != address(0), "Can't bid on your own Lemonade");
+        require(auction.seller != address(0), "Can't bid on your own Lemonade"); //Todo: Fix this should be auction.seller != msg.sender
         require(msg.value >= auction.price, "Bid is to low");
 
         address seller = auction.seller;

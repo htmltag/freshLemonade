@@ -22,6 +22,11 @@
   font-family: 'Charm';
 }
 
+.ropsten{
+  color: red;
+  font-size: 0.8rem;
+}
+
 .App-link {
   color: #61dafb;
 }

@@ -9,7 +9,7 @@ class BidOnLemonade extends React.Component {
 
     // let drizzle know we want to watch the `myString` method
     const stackId = contract.methods["bid"].cacheSend(this.props.lemonadeid, {
-        from: drizzleState.accounts[0]
+        from: drizzleState.accounts[0], value: drizzle.web3.utils.toWei(this.props.price,'ether')
       });
 
     // save the `stackId` to local component state for later reference
